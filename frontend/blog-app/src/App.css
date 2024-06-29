@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  height: 100%;
+}
+
+/* Home image */
+.image-container {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.image {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: xx-large;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-image: fill 0 linear-gradient(#0001, #000);
+  color: #fff;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(247, 196, 253, 0.432);
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #d400ff;
+  text-decoration: underline;
+}
+
+p {
+  color: gray;
+}
+
+/* About */
+.about-container{
+  background-color: #f8ebfd;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.about-heading{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about-subheading{
+  padding: 0% 5%;
+  color: #9b59b6;
+  font-size: 2rem;
+}
+
+.about-text{
+  padding: 1% 10%;
+  font-size: 20px;
+}
+/*Article  */
+
+.articles-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.article-item img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.article-info {
+  flex: 1;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.article-excerpt {
+  margin-bottom: 15px;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Upload article */
+.upload-parant{
+  min-height: 100vh;
+  background-color: #f8ebfd;
+}
+.upload-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+}
+
+.upload-container input[type='text'] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.upload-container button {
+  background-color: #9b59b6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-container button:hover {
+  background-color: #b918f8;
+}
+
+
+/* Login from style */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login {
+  padding: 5%;
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  box-shadow: 3px 5px 10px #42264d;
+  background-color: #9b59b6;
+}
+
+.login h1 {
+  font-family: fantasy;
+  font-size: xx-large;
+  color: #f8f9fa;
+}
+
+.login input {
+  border: none;
+  border-bottom: 2px solid #f8f9fa;
+  font-size: 20px;
+  width: 100%;
+  background-color: #9b59b6;
+}
+
+.login input:hover {
+  border-bottom: 2px solid #343a40;
+}
+
+.input {
+  margin-top: 15%;
+}
+
+#username {
+  margin-bottom: 10%;
+}
+
+#username::placeholder {
+  color: #f8f9fa;
+}
+
+#pass::placeholder {
+  color: #f8f9fa;
+}
+
+#username:hover::placeholder {
+  color: #343a40;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+#pass:hover::placeholder {
+  color: #343a40;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+#username:focus {
+  outline: none;
+  color: #f8f9fa;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+#pass:focus {
+  outline: none;
+  color: #f8f9fa;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+#username:not(:focus) {
+  color: #f8f9fa;
+}
+
+#pass:not(:focus) {
+  color: #f8f9fa;
+}
+
+.login-btn {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.login p {
+  color: rgb(207, 207, 207);
+  font-weight: bold;
+}
+
+.p-btn .btn {
+  width: 100%;
+  border: none;
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.p-btn .btn:hover {
+  color: #f8f9fa;
+  background-color: #b918f8;
+  box-shadow: 0 5px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.p-btn .btn:active {
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+  opacity: 0.8;
+}
